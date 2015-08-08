@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Add";
+}
+
+
+<section class="featured form-group">
+    <div class="content-wrapper">
+        <hgroup class="title">
+            <h1>Found a place somewhere not listed here?</h1>
+            <br />
+            <h2>Help us improve our site!</h2>
+        </hgroup>
+            
+</div>
+</section>
+
+<br />
+
+<form name="formAdd">
+    <section class="contact" ng-controller="addCtrl">
+        <div class="form-group">
+            <label class="col-xs-3">Name / Establishment: <span class="required-field">*</span></label>
+            <input type="text" ng-model="location.Name" required />
+        </div>
+
+        <div class="form-group">
+            <label class="col-xs-3">Floor: </label>
+            <input type="number" min="1" ng-model="location.Floor" />
+        </div>
+
+        <div class="form-group">
+            <label class="col-xs-3">Building: </label>
+            <input type="text" ng-model="location.Building" />
+        </div>
+
+        <div class="form-group">
+            <label class="col-xs-3">Street: </label>
+            <input type="text" ng-model="location.Street" />
+        </div>
+
+        <div class="form-group">
+            <label class="col-xs-3">Barangay: </label>
+            <input type="text" ng-model="location.Barangay" />
+        </div>
+
+        <div class="form-group">
+            <label class="col-xs-3">Town / Municipality: <span class="required-field">*</span></label>
+            <input type="text" ng-model="location.City" required />
+        </div>
+
+        <div class="form-group">
+            <label class="col-xs-3">Province: <span class="required-field">*</span></label>
+            <input type="text" ng-model="location.Province" required />
+        </div>
+
+        <div class="form-group col-xs-7" style="text-align:right">
+            <input type="submit" ng-disabled="formAdd.$invalid" ng-click="add(location)" class="btn btn-primary" />
+        </div>
+    </section>
+</form>
+
+<script src="~/Scripts/addController.js"></script>

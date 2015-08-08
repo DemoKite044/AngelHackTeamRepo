@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<section class="featured form-group">
+    <div class="content-wrapper">
+        <hgroup class="title">
+            <h1>We'd like to hear from you!</h1>
+        </hgroup>
+           
+</div>
+</section>
+
+<form name="formContact">
+
+    <section class="contact" ng-controller="contactCtrl">
+        <div class="form-group">
+            <label class="col-xs-2">Name: <span class="required-field">*</span></label>
+            <input type="text" ng-model="name" required />
+        </div>
+
+        <div class="form-group">
+            <label class="col-xs-2">Message: <span class="required-field">*</span></label>
+            <textarea rows="5" style="resize:none" ng-model="message" required></textarea>
+        </div>
+
+        <div class="form-group col-xs-7" style="text-align:right">
+            <input type="submit" ng-disabled="formContact.$invalid" ng-click="contact(name, message)" class="btn btn-primary" value="Send" />
+        </div>
+    </section>
+
+</form>
+
+<br />
+
+<section class="contact">
+<div class="col-xs-12 form-group">
+    <span style="font-size:small">
+        or email us directly at <a href="mailto:support@peeplace.com" class="no-underline-anchor">support@peeplace.com</a>
+    </span>
+</div>
+</section>
+
+
+<script src="~/Scripts/contactController.js"></script>
