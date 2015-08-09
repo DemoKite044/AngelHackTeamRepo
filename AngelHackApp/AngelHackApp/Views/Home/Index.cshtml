@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<link href="~/Content/star-rating.css" rel="stylesheet" />
+
+<div ng-controller="angelHackCtrl" ng-cloak>
+
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>On the road?</h1>
+                <h2>Search for a public toilet near you.</h2>
+
+                @*<a title="By Jacek Bednarek (author permited me to publish this photo on the lincence below) (http://www.bednarek.internet.v.pl/page/14a.html) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AOuthouse_in_the_mountains.jpg"><img width="512" alt="Outhouse in the mountains" src="~/Images/Outhouse_in_the_mountains.jpg" /></a>*@
+            
+            </hgroup>
+            <p>
+                <input type="text" ng-model="keyword" placeholder="location" />
+                <input type="submit" ng-click="search(keyword)" style="padding:5px; font-size:1em;font-weight:600" value="Find" />
+            </p>
+
+        </div>
+    </section>
+
+    <div class="content-wrapper">
+
+        <h3>{{result}}</h3>
+
+        <ol class="round">
+            <li ng-repeat="location in locations">
+                <h4>{{location.Name}}</h4> <input id="input-2" class="rating" data-min="0" data-max="5" data-step="0.1">
+                {{location.Floor}} {{location.Building}} {{location.Street}} {{location.Barangay}} {{location.City}}, {{location.Province}}
+            </li>
+
+        </ol>
+    </div>
+</div>
+
+<script src="~/Scripts/controller.js"></script>
+<script src="~/Scripts/star-rating.js"></script>

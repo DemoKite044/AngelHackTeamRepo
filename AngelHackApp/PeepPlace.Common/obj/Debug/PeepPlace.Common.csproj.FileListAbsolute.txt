@@ -1,0 +1,4 @@
+D:\Tutorial\Practice\AngelHack\PeepPlace.Common\bin\Debug\PeepPlace.Common.dll
+D:\Tutorial\Practice\AngelHack\PeepPlace.Common\bin\Debug\PeepPlace.Common.pdb
+D:\Tutorial\Practice\AngelHack\PeepPlace.Common\obj\Debug\PeepPlace.Common.dll
+D:\Tutorial\Practice\AngelHack\PeepPlace.Common\obj\Debug\PeepPlace.Common.pdb
