@@ -19,6 +19,7 @@ angelHackApp.controller("angelHackCtrl", function ($scope, $http) {
                 if (data.length == 0)
                 {
                     $scope.result = "Sorry, we can't find a toilet near your location.";
+                    $scope.locations = new Object();
                 }
                 else
                 {

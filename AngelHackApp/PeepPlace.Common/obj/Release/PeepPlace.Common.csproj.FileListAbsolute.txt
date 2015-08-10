@@ -1,0 +1,5 @@
+C:\Users\Jason Acebedo\Desktop\New folder\AngelHack2015\PeepPlace.Common\bin\Release\PeepPlace.Common.dll
+C:\Users\Jason Acebedo\Desktop\New folder\AngelHack2015\PeepPlace.Common\bin\Release\PeepPlace.Common.pdb
+C:\Users\Jason Acebedo\Desktop\New folder\AngelHack2015\PeepPlace.Common\obj\Release\PeepPlace.Common.csprojResolveAssemblyReference.cache
+C:\Users\Jason Acebedo\Desktop\New folder\AngelHack2015\PeepPlace.Common\obj\Release\PeepPlace.Common.dll
+C:\Users\Jason Acebedo\Desktop\New folder\AngelHack2015\PeepPlace.Common\obj\Release\PeepPlace.Common.pdb
